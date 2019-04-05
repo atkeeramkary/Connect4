@@ -1,0 +1,85 @@
+/*body {
+text-align: center;
+
+}
+
+
+#connect-4-grid {
+	background-color: yellow;
+	display: inline-block; 
+	height: 
+}
+
+
+.col {
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+}
+*/
+
+
+
+
+
+.column {
+	background-color: pink;
+	display: inline-block;
+	flex-direction: column;
+
+
+}
+
+
+
+.square {
+
+	background-color: white;
+
+	border: 1px solid black;
+	height: 100px;
+	width: 100px;
+}
+
+
+div#1-1.square {
+	background-color: blue;
+}
+
+/*#connect-4-grid {
+	
+	background-color: yellow;
+}*/
+
+
+
+
+/*  GRID OF SEVEN  
+.span_7_of_7 {
+	width: 100%;
+}
+
+.span_6_of_7 {
+  	width: 85.42%;
+}
+
+.span_5_of_7 {
+  	width: 70.85%;
+}
+
+.span_4_of_7 {
+  	width: 56.28%;
+}
+
+.span_3_of_7 {
+  	width: 41.71%;
+}
+
+.span_2_of_7 {
+  	width: 27.14%;
+}
+
+.span_1_of_7 {
+  	width: 12.57%;
+}
+*/
