@@ -38,40 +38,34 @@ console.log("Hello World");
 // const connect4 = new C4Grid('#connect4')
 
 // });
-// const game = {
-// 	grid: null,
-// }
-
-
-// for (let col = 0; col < this.COLS; col++){
-			
-// 		}	
-// // function makeBoard () => {
-	
-
-
-// 	for( let row = 0; row <= 5; row++) {
-		
-		
-
-// 		}
-
-// 	for( let col= 0; col <= 6; col++) {
-	
-
-// 	}
-
-// }
+const game = {
+	whoseTurn: "player1",
+	clickSquare: function() {
+		// if player1s turn
+		// make the square clicked red
+		// else
+		// make it blue
 
 
 
+	}
+}
+
+const anil = {
+	gender: "male",
+	shirtColor: "grey", 
+	sayHello() {
+
+		console.log("hello I am wearing a " + this.shirtColor + " shirt.");
+	}
+}
 
 
-
-// const allSquares = document.querySelectorAll(".square")
 
 
 const pickSquare = (event) => {
+
+	console.log(event)
 
 	// console.log(event.target.id); // be sure to check event.target -- that's where the info is
 	// event is what will be passed into the handler as an argument
@@ -79,20 +73,66 @@ const pickSquare = (event) => {
 	// event.target is the vanilla and we need to turn it back to jquery for it function properly
 	console.log(event.target);
 
-
 	const $squareSelection = $(event.target)
-
 
 	console.log($squareSelection);
 
-	$squareSelection.css('background-color', 'red');
+	// $squareSelection.css('background-color', 'red');
 
+	// call method in game object
+	//game.clickSquare($squareSelection) 
+
+	if (game.whoseTurn == "player1") {
+		$squareSelection.css('background-color', 'red');
+		game.whoseTurn = "player2"
+
+	} 
+	else {
+		$squareSelection.css('background-color','blue');
+		game.whoseTurn = "player1"
+
+	}
+
+	
+	// if player1s turn
+	// make the square clicked red
+	// else
+	// make it blue
 
 }
 
 
-const allSquares = $('.square')
-allSquares.on("click", pickSquare) // when allSquares is clicked, pickSquare will run
+const allSquares = $('.square');
+allSquares.on("click", (event) => {
+	console.log(event)
+
+	pickSquare(event)
+}); // when allSquares is clicked, pickSquare will run
+
+
+// function switchPlayer(event) { 
+		
+
+// 		// const pickSquare1 = (event) => {
+
+// 	// console.log(event.target.id); // be sure to check event.target -- that's where the info is
+// 	// event is what will be passed into the handler as an argument
+
+// 	// event.target is the vanilla and we need to turn it back to jquery for it function properly
+// 	console.log(event.target);
+
+// 	console.log("switch player now");
+
+
+// 	const $squareSelection1 = $(event.target)
+
+
+// 	console.log($squareSelection1);
+
+// 	$squareSelection1.css('background-color', 'blue');
+
+// }
+
 
 
 // console.log(allSquares);
