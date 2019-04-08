@@ -21,7 +21,6 @@ text-align: center;
 
 
 
-
 .column {
 	background-color: pink;
 	display: inline-block;
@@ -31,6 +30,9 @@ text-align: center;
 }
 
 
+#sq-1-1 {
+	
+}
 
 .square {
 
@@ -41,10 +43,9 @@ text-align: center;
 	width: 100px;
 }
 
-
-div#1-1.square {
+/*div#1-1.square {
 	background-color: blue;
-}
+}*/
 
 /*#connect-4-grid {
 	
