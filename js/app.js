@@ -674,9 +674,285 @@ const player1 = {
 			return true 
 		}
 
+		if (
+			this.slotsFilled.includes('sq-1-1') && 
+			this.slotsFilled.includes('sq-1-2') &&
+			this.slotsFilled.includes('sq-1-3') &&
+			this.slotsFilled.includes('sq-1-4') 
 
+		) {
+			return true 
+		}
 
+		if (
+			this.slotsFilled.includes('sq-1-2') && 
+			this.slotsFilled.includes('sq-1-3') &&
+			this.slotsFilled.includes('sq-1-4') &&
+			this.slotsFilled.includes('sq-1-5') 
 
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-1-3') && 
+			this.slotsFilled.includes('sq-1-4') &&
+			this.slotsFilled.includes('sq-1-5') &&
+			this.slotsFilled.includes('sq-1-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-1-4') && 
+			this.slotsFilled.includes('sq-1-5') &&
+			this.slotsFilled.includes('sq-1-6') &&
+			this.slotsFilled.includes('sq-1-7') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-2-1') && 
+			this.slotsFilled.includes('sq-2-2') &&
+			this.slotsFilled.includes('sq-2-3') &&
+			this.slotsFilled.includes('sq-2-4') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-2-2') && 
+			this.slotsFilled.includes('sq-2-3') &&
+			this.slotsFilled.includes('sq-2-4') &&
+			this.slotsFilled.includes('sq-2-5') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-2-3') && 
+			this.slotsFilled.includes('sq-2-4') &&
+			this.slotsFilled.includes('sq-2-5') &&
+			this.slotsFilled.includes('sq-2-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-2-4') && 
+			this.slotsFilled.includes('sq-2-5') &&
+			this.slotsFilled.includes('sq-2-6') &&
+			this.slotsFilled.includes('sq-2-7') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-3-1') && 
+			this.slotsFilled.includes('sq-3-2') &&
+			this.slotsFilled.includes('sq-3-3') &&
+			this.slotsFilled.includes('sq-3-4') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-3-2') && 
+			this.slotsFilled.includes('sq-3-3') &&
+			this.slotsFilled.includes('sq-3-4') &&
+			this.slotsFilled.includes('sq-3-5') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-3-3') && 
+			this.slotsFilled.includes('sq-3-4') &&
+			this.slotsFilled.includes('sq-3-5') &&
+			this.slotsFilled.includes('sq-3-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-3-4') && 
+			this.slotsFilled.includes('sq-3-5') &&
+			this.slotsFilled.includes('sq-3-6') &&
+			this.slotsFilled.includes('sq-3-7') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-4-1') && 
+			this.slotsFilled.includes('sq-4-2') &&
+			this.slotsFilled.includes('sq-4-3') &&
+			this.slotsFilled.includes('sq-4-4') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-4-2') && 
+			this.slotsFilled.includes('sq-4-3') &&
+			this.slotsFilled.includes('sq-4-4') &&
+			this.slotsFilled.includes('sq-4-5') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-4-3') && 
+			this.slotsFilled.includes('sq-4-4') &&
+			this.slotsFilled.includes('sq-4-5') &&
+			this.slotsFilled.includes('sq-4-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-4-4') && 
+			this.slotsFilled.includes('sq-4-5') &&
+			this.slotsFilled.includes('sq-4-6') &&
+			this.slotsFilled.includes('sq-4-7') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-5-1') && 
+			this.slotsFilled.includes('sq-5-2') &&
+			this.slotsFilled.includes('sq-5-3') &&
+			this.slotsFilled.includes('sq-5-4') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-5-2') && 
+			this.slotsFilled.includes('sq-5-3') &&
+			this.slotsFilled.includes('sq-5-4') &&
+			this.slotsFilled.includes('sq-5-5') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-5-3') && 
+			this.slotsFilled.includes('sq-5-4') &&
+			this.slotsFilled.includes('sq-5-5') &&
+			this.slotsFilled.includes('sq-5-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-5-4') && 
+			this.slotsFilled.includes('sq-5-5') &&
+			this.slotsFilled.includes('sq-5-6') &&
+			this.slotsFilled.includes('sq-5-7') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-6-1') && 
+			this.slotsFilled.includes('sq-6-2') &&
+			this.slotsFilled.includes('sq-6-3') &&
+			this.slotsFilled.includes('sq-6-4') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-6-2') && 
+			this.slotsFilled.includes('sq-6-3') &&
+			this.slotsFilled.includes('sq-6-4') &&
+			this.slotsFilled.includes('sq-6-5') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-6-3') && 
+			this.slotsFilled.includes('sq-6-4') &&
+			this.slotsFilled.includes('sq-6-5') &&
+			this.slotsFilled.includes('sq-6-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-6-4') && 
+			this.slotsFilled.includes('sq-6-5') &&
+			this.slotsFilled.includes('sq-6-6') &&
+			this.slotsFilled.includes('sq-6-7') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-7-1') && 
+			this.slotsFilled.includes('sq-7-2') &&
+			this.slotsFilled.includes('sq-7-3') &&
+			this.slotsFilled.includes('sq-7-4') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-7-2') && 
+			this.slotsFilled.includes('sq-7-3') &&
+			this.slotsFilled.includes('sq-7-4') &&
+			this.slotsFilled.includes('sq-7-5') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-7-3') && 
+			this.slotsFilled.includes('sq-7-4') &&
+			this.slotsFilled.includes('sq-7-5') &&
+			this.slotsFilled.includes('sq-7-6') 
+
+		) {
+			return true 
+		}
+
+		if (
+			this.slotsFilled.includes('sq-7-4') && 
+			this.slotsFilled.includes('sq-7-5') &&
+			this.slotsFilled.includes('sq-7-6') &&
+			this.slotsFilled.includes('sq-7-7') 
+
+		) {
+			return true 
+		}
 
 
 
