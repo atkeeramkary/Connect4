@@ -40,6 +40,7 @@ console.log("Hello World");
 // });
 const game = {
 	whoseTurn: "player1",
+	fourInARow: false,
 	clickSquare: function() {
 		// if player1s turn
 		// make the square clicked red
@@ -48,26 +49,56 @@ const game = {
 
 
 
-	}
+	},
+
+
+
+	checkWin: function() {
+		// const columns = $('.column') 
+
+		// $('.square').append(columns)	
+
+		// for(i = 0; i < columns.length; i++) {
+		// 	console.log("column" + i);
+		// }
+
+		
+	},
 }
 
-const anil = {
-	gender: "male",
-	shirtColor: "grey", 
-	sayHello() {
+const player1 = {
+	slotsFilled: []	
 
-		console.log("hello I am wearing a " + this.shirtColor + " shirt.");
-	}
+
 }
 
 
+const player2 = {
+	slotsFilled: []
+
+
+}
+// console.log(checkWin());
+
+// const anil = {
+// 	gender: "male",
+// 	shirtColor: "grey", 
+// 	sayHello() {
+
+// 		console.log("hello I am wearing a " + this.shirtColor + " shirt.");
+// 	}
+// }
+
+// fourInARow {
+
+// } 
 
 
 const pickSquare = (event) => {
 
 	console.log(event)
 
-	// console.log(event.target.id); // be sure to check event.target -- that's where the info is
+	console.log(event.target.id); // be sure to check event.target -- that's where the info is
 	// event is what will be passed into the handler as an argument
 
 	// event.target is the vanilla and we need to turn it back to jquery for it function properly
@@ -82,18 +113,40 @@ const pickSquare = (event) => {
 	// call method in game object
 	//game.clickSquare($squareSelection) 
 
+
+
+
+
 	if (game.whoseTurn == "player1") {
 		$squareSelection.css('background-color', 'red');
+		
+		// push the ID of the selected tile into player 1's slotFilled 
+
+		player1.slotsFilled.push($squareSelection)
+
+
+		console.log(player1.slotsFilled);
+
+		// console.log here to test 
+
 		game.whoseTurn = "player2"
 
 	} 
 	else {
 		$squareSelection.css('background-color','blue');
+
+		// same as above but for player 2 
+
+		player2.slotsFilled.push($squareSelection)
+
+		// console.log to test 
+
 		game.whoseTurn = "player1"
 
 	}
 
-	
+	game.checkWin();
+
 	// if player1s turn
 	// make the square clicked red
 	// else
@@ -104,7 +157,7 @@ const pickSquare = (event) => {
 
 const allSquares = $('.square');
 allSquares.on("click", (event) => {
-	console.log(event)
+	// console.log(event.target.id)
 
 	pickSquare(event)
 }); // when allSquares is clicked, pickSquare will run
