@@ -1888,10 +1888,14 @@ const pickSquare = (event) => {
 	//game.clickSquare($squareSelection) 
 
 
+	// has the chosen square already been clicked? if yes, do nothing 
+	// if ($squareSelection.css('background-color') == rgb(255,0,0) ||
+	// 	$squareSelection.css('background-color') == rgb(0,0,255)) {
+	// 	return
+	// } 
+	
 
-
-
-	if (game.whoseTurn == "player1") {
+		if (game.whoseTurn == "player1") {
 		$squareSelection.css('background-color', 'red');
 		
 		// push the ID of the selected tile into player 1's slotFilled 
@@ -1905,8 +1909,8 @@ const pickSquare = (event) => {
 
 		game.whoseTurn = "player2"
 
-	} 
-	else {
+		} 
+		else {
 		$squareSelection.css('background-color','blue');
 
 		// same as above but for player 2 
@@ -1924,30 +1928,27 @@ const pickSquare = (event) => {
 
 
 	const player1HasWon = player1.checkWin();
+	
 	if (player1HasWon == true) {
-		alert("Player 1 has won the game")
+		wonGame(1);
 	}
 
 
 	const player2HasWon = player2.checkWin();
 	if (player2HasWon == true) {
-		alert("Player 2 has won the game")	
+		wonGame(2);
 	}
 	// if player1s turn
 	// make the square clicked red
 	// else
 	// make it blue
-
-	
-
-
-
-
-
 }
 
 
-
+function wonGame (num) {
+	// alert("Player " + num + " has won the game!")
+	$('h1').text("Player " + num + " has won the game!")
+}
 
 const allSquares = $('.square');
 allSquares.on("click", (event) => {
