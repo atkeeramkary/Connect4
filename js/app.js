@@ -1960,6 +1960,11 @@ allSquares.on("click", (event) => {
 }); // when allSquares is clicked, pickSquare will run
 
 
+const reloadButton = $('button')
+reloadButton.on("click", (event) => {
+	document.location.reload()
+
+});
 // function switchPlayer(event) { 
 		
 
