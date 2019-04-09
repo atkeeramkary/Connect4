@@ -18,9 +18,16 @@ text-align: center;
 }
 */
 
+body {
+	background: url(https://i.redd.it/wm4evreq5o921.jpg);
+
+
+}
+
 h1 {
 	font-family: 'Lobster', cursive;
 	font-size: 50px;
+	color: crimson;
 
 }
 
