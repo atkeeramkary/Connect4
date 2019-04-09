@@ -1889,10 +1889,7 @@ const pickSquare = (event) => {
 
 
 	// has the chosen square already been clicked? if yes, do nothing 
-	// if ($squareSelection.css('background-color') == rgb(255,0,0) ||
-	// 	$squareSelection.css('background-color') == rgb(0,0,255)) {
-	// 	return
-	// } 
+	
 	
 
 		if (game.whoseTurn == "player1") {
@@ -1925,6 +1922,11 @@ const pickSquare = (event) => {
 
 	}
 
+	if ($squareSelection.css('background-color') == "rgb(255,0,0)" ||
+		$squareSelection.css('background-color') == "rgb(0,0,255)") {
+		return
+	} 
+
 
 
 	const player1HasWon = player1.checkWin();
@@ -1947,7 +1949,7 @@ const pickSquare = (event) => {
 
 function wonGame (num) {
 	// alert("Player " + num + " has won the game!")
-	$('h1').text("Player " + num + " has won the game!")
+	$('h1').text("Hooray! Player " + num + " has won the game!")
 }
 
 const allSquares = $('.square');
