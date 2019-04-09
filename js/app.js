@@ -1890,9 +1890,14 @@ const pickSquare = (event) => {
 
 	// has the chosen square already been clicked? if yes, do nothing 
 	
+	if ($squareSelection.css('background-color') == "rgb(255, 0, 0)" ||
+		$squareSelection.css('background-color') == "rgb(0, 0, 255)") {
+		return
+	} 
 	
+	console.log($squareSelection.css('background-color'))
 
-		if (game.whoseTurn == "player1") {
+	if (game.whoseTurn == "player1") {
 		$squareSelection.css('background-color', 'red');
 		
 		// push the ID of the selected tile into player 1's slotFilled 
@@ -1907,7 +1912,7 @@ const pickSquare = (event) => {
 		game.whoseTurn = "player2"
 
 		} 
-		else {
+	else {
 		$squareSelection.css('background-color','blue');
 
 		// same as above but for player 2 
@@ -1921,11 +1926,6 @@ const pickSquare = (event) => {
 		game.whoseTurn = "player1"
 
 	}
-
-	if ($squareSelection.css('background-color') == "rgb(255,0,0)" ||
-		$squareSelection.css('background-color') == "rgb(0,0,255)") {
-		return
-	} 
 
 
 

@@ -18,6 +18,13 @@ text-align: center;
 }
 */
 
+h1 {
+	font-family: 'Lobster', cursive;
+	font-size: 50px;
+
+}
+
+
 
 
 
@@ -31,7 +38,7 @@ text-align: center;
 
 
 #sq-1-1 {
-	
+
 }
 
 .square {
