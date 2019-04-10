@@ -1965,6 +1965,11 @@ reloadButton.on("click", (event) => {
 	document.location.reload()
 
 });
+
+
+
+
+
 // function switchPlayer(event) { 
 		
 

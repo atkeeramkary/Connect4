@@ -31,6 +31,9 @@ h1 {
 
 }
 
+h3 {
+	color: rgb(120,224,134);
+}
 
 button {
 	height: 30px;
@@ -56,8 +59,8 @@ button {
 	background-color: white;
 
 	border: 1px solid black;
-	height: 100px;
-	width: 100px;
+	height: 90px;
+	width: 90px;
 }
 
 /*div#1-1.square {
