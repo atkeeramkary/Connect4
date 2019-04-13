@@ -1866,6 +1866,8 @@ const player2 = {
 // fourInARow {
 
 // } 
+// this is the function that lets the user pick a square and claim it with a 
+// designated color.
 
 
 const pickSquare = (event) => {
@@ -1889,7 +1891,7 @@ const pickSquare = (event) => {
 
 
 	// has the chosen square already been clicked? if yes, do nothing 
-	
+	// this code prevents players from reusing previous squares
 	if ($squareSelection.css('background-color') == "rgb(255, 0, 0)" ||
 		$squareSelection.css('background-color') == "rgb(0, 0, 255)") {
 		return
@@ -1899,7 +1901,7 @@ const pickSquare = (event) => {
 
 	if (game.whoseTurn == "player1") {
 		$squareSelection.css('background-color', 'red');
-		
+		//this code gives player 1 the 'red' color
 		// push the ID of the selected tile into player 1's slotFilled 
 
 		player1.slotsFilled.push($squareSelection.attr("id"))
@@ -1915,7 +1917,7 @@ const pickSquare = (event) => {
 	else {
 		$squareSelection.css('background-color','blue');
 
-		// same as above but for player 2 
+		// same as above but for player 2 gets blue instead
 
 		player2.slotsFilled.push($squareSelection.attr("id"))
 
@@ -1928,7 +1930,7 @@ const pickSquare = (event) => {
 	}
 
 
-
+		//code that checks if and which player won
 	const player1HasWon = player1.checkWin();
 	
 	if (player1HasWon == true) {
@@ -1946,6 +1948,7 @@ const pickSquare = (event) => {
 	// make it blue
 }
 
+//this function notifiys the users when players won
 
 function wonGame (num) {
 	// alert("Player " + num + " has won the game!")
